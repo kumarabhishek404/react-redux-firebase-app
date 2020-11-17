@@ -26,7 +26,7 @@ class SignUp extends Component {
 
     return (
       <div className="container">
-        <form className="white" onSubmit={this.handleSubmit}>
+        <form className="grey lighten-2" onSubmit={this.handleSubmit}>
           <h5 className="grey-text text-darken-3">Sign Up</h5>
           <div className="input-field">
             <label htmlFor="email">Email</label>
@@ -45,7 +45,7 @@ class SignUp extends Component {
             <input type="text" id='lastName' onChange={this.handleChange} />
           </div>
           <div className="input-field">
-            <button className="btn pink lighten-1 z-depth-0">Sign Up</button>
+            <button className="btn yellow accent-2 black-text z-depth-0 bold-text">Sign Up</button>
             <div className='red-text center'>
               {authError ? <p>{authError}</p> : null}
             </div>

@@ -24,7 +24,7 @@ class SignIn extends Component {
 
     return (
       <div className="container">
-        <form className="white" onSubmit={this.handleSubmit}>
+        <form className='grey lighten-2' style={{padding: 30}} onSubmit={this.handleSubmit}>
           <h5 className="grey-text text-darken-3">Sign In</h5>
           <div className="input-field">
             <label htmlFor="email">Email</label>
@@ -35,7 +35,7 @@ class SignIn extends Component {
             <input type="password" id='password' onChange={this.handleChange} />
           </div>
           <div className="input-field">
-            <button className="btn pink lighten-1 z-depth-0">Login</button>
+            <button className="btn yellow accent-2 black-text z-depth-0 bold-text">Login</button>
             <div className='red-text center'>
               {authError ? <p>{authError}</p> : null}
             </div>

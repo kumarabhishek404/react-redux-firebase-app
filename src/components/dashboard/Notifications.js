@@ -9,6 +9,7 @@ const Notifications = (props) => {
       <div className='card z-depth-0'>
         <div className='card-content'>
           <span className='card-title'>Notifications</span>
+          <span className='red-text'>This service is not active in free acount, if you want to use notification services then you have to pay for it.</span>
           <ul className='notifications'>
             {
               notifications && notifications.map(item => {
